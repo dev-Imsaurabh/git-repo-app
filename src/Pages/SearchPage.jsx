@@ -9,7 +9,7 @@ export default function SearchPage(){
     const [searchParams ,setSearchParams]=useSearchParams()
     const [page,setPage]=useState(1)
     const [loading,setLoading] = useState(false)
-    console.log(searchParams.get("page"))
+    console.log(searchParams.get(`page`))
 
     useEffect(()=>{
         setLoading(true)
