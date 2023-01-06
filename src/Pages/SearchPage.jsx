@@ -27,7 +27,7 @@ export default function SearchPage(){
 
     return loading?<h1>Loading...</h1>:<div  style={{margin:"auto",width:"80%",marginTop:"100px",display:"grid",gridTemplateColumns:"repeat(3,1fr)",gap:"16px"}}>
 
-        <div><button disabled={page==1}
+        <div><button disabled={page===1}
          onClick={()=>{setPage(page-1)
             setSearchParams(`page=${page-1}`)
 
